@@ -2,8 +2,8 @@
   "name": "openfin",
   "version": "1.0.3",
   "scripts": {
-    "s:c": "cd ./container && npm run client",
-    "s:w": "cd ./workspace && npm run client",
+    "start:container": "cd ./container && npm start",
+    "client:container": "cd ./container && npm run client",
     "test": "echo \"LGTM\" && exit 0"
   },
   "repository": {

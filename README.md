@@ -1,10 +1,25 @@
 ## OpenFin
 
-This repo exists to provide a quick way to evaluate the [OpenFin](https://www.openfin.co/) financial application platform. It is currently used by top tier financial institutions as the framework on top of which specific applications are built. 
+This repo exists to provide a quick way to evaluate the [OpenFin](https://www.openfin.co/) financial application platform. It is currently used by top tier financial institutions as the framework on top of which specific applications are built
+
+> [GitHub starter](https://github.com/built-on-openfin/frontend-framework-starter)
 
 OpenFin provides a solid application framework for desktop OS's. The frontend is Framework agnostic, which means we can use modern React patterns, including Redux, Material UI and much more
 
-> [GitHub starter](https://github.com/built-on-openfin/frontend-framework-starter)
+## Usage (container)
+
+```bash
+cd <working-dir>
+git clone https://github.com/listingslab-software/openfin <your-project>
+cd <your-project>
+cd container
+npm install
+cd ../
+npm run start:container
+# In a new terminal window
+npm run client:container
+```
+
 
 ## Difference between containers & workspaces
 
