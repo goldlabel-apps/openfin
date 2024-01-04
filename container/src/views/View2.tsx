@@ -1,6 +1,10 @@
 import "@finos/fdc3";
 import React, { useEffect, useState } from 'react';
-import logo from '../logo.svg';
+import {
+	Button,
+	Card,
+	CardContent,
+ } from "@mui/material"
 
 function View2() {
 	const [message, setMessage] = useState("");
@@ -35,13 +39,11 @@ function View2() {
 	}	
 
 	return (
+		<Card><CardContent>
 		<div className="col fill gap20">
 			<header className="row spread middle">
 				<div className="col">
 					<h1>Right Column</h1>
-					<h1 className="tag">
-						Outputs
-					</h1>
 				</div>
 				
 			</header>
@@ -50,9 +52,12 @@ function View2() {
 					<label htmlFor="message">Context Received</label>
 					<pre id="message" className="width-full" style={{minHeight:"110px"}}>{message}</pre>
 				</fieldset>
-				<button onClick={() => setMessage("")}>Reset</button>
+				<Button onClick={() => setMessage("")}>
+					Reset
+				</Button>
 			</main>
 		</div>
+		</CardContent></Card>
 	);
 }
 
