@@ -1,8 +1,12 @@
-import { fin } from "@openfin/core";
-import React from 'react';
-import logo from '../logo.svg';
-import * as Notifications from "@openfin/workspace/notifications";
-import "@finos/fdc3";
+import { fin } from "@openfin/core"
+import React from 'react'
+import * as Notifications from "@openfin/workspace/notifications"
+import "@finos/fdc3"
+import {
+	Button,
+	Card,
+	CardContent,
+ } from "@mui/material"
 
 function View1() {
 	async function showNotification() {
@@ -13,7 +17,7 @@ function View1() {
 			toast: "transient",
 			category: "default",
 			template: "markdown"
-		});
+		})
 	}
 
 	async function broadcastFDC3Context() {
@@ -24,15 +28,15 @@ function View1() {
 				id: {
 					ticker: 'MSFT'
 				}
-			});
+			})
 		} else {
-			console.error("FDC3 is not available");
+			console.error("FDC3 is not available")
 		}
 	}
 
 	async function broadcastFDC3ContextAppChannel() {
 		if (window.fdc3) {
-			const appChannel = await window.fdc3.getOrCreateChannel("CUSTOM-APP-CHANNEL");
+			const appChannel = await window.fdc3.getOrCreateChannel("CUSTOM-APP-CHANNEL")
 
 			await appChannel.broadcast({
 				type: 'fdc3.instrument',
@@ -40,30 +44,42 @@ function View1() {
 				id: {
 					ticker: 'AAPL'
 				}
-			});
+			})
 		} else {
-			console.error("FDC3 is not available");
+			console.error("FDC3 is not available")
 		}
 	}
 
 	return (
+		<Card>
+			<CardContent>
 		<div className="col fill gap20">
 			<header className="row spread middle">
 				<div className="col">
-					<h1>OpenFin React View 1</h1>
-					<h1 className="tag">React app view in an OpenFin container</h1>
+					<h1>
+						Navigation 
+					</h1>
 				</div>
-				<div className="row middle gap10">
-					<img src={logo} alt="OpenFin" height="40px" />
-				</div>
+				
 			</header>
 			<main className="col gap10 left">
-				<button onClick={() => showNotification()}>Show Notification</button>
-				<button onClick={() => broadcastFDC3Context()}>Broadcast FDC3 Context</button>
-				<button onClick={() => broadcastFDC3ContextAppChannel()}>Broadcast FDC3 Context on App Channel</button>
+				
+						<Button onClick={() => showNotification()}>
+							Show Notification
+							</Button>
+						<Button onClick={() => broadcastFDC3Context()}>
+							Broadcast FDC3 Context
+						</Button>
+
+						<Button onClick={() => broadcastFDC3ContextAppChannel()}>
+							Broadcast FDC3 Context on App Channel
+						</Button>
+				
 			</main>
 		</div>
-	);
+		</CardContent>
+		</Card>
+	)
 }
 
-export default View1;
+export default View1
