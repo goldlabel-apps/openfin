@@ -19,3 +19,7 @@ A container is an individual window or instance of an application running within
    - A workspace, on the other hand, is a broader concept that encompasses multiple containers or windows arranged in a specific layout or configuration.
    - Workspaces in OpenFin allow you to organize and manage multiple windows or containers together as a single layout or arrangement.
    - They can save the state of different applications, their positions, sizes, and relationships with each other, enabling users to quickly switch between predefined layouts or configurations.
+
+#### Keywords 
+
+Artificial Intelligence (AI), Machine Learning (ML), Natural Language Processing (NLP), GPT (Generative Pre-trained Transformer), Robotics, Reinforcement Learning, Neural Networks, AI Research, Technology Innovation, OpenAI Projects, Ethical AI, Deep Learning, AI Applications, Future of AI, OpenAI API
