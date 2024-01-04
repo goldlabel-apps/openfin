@@ -1,0 +1,12 @@
+{
+  "name": "openfin",
+  "version": "1.0.1",
+  "scripts": {
+    "test": "echo \"LGTM\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/listingslab-software/openfin"
+  },
+  "author": "@listingslab"
+}

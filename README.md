@@ -1,5 +1,10 @@
 ## OpenFin
 
+> [OpenFin's frontend-framework-starter](https://github.com/built-on-openfin/frontend-framework-starter)
+
+
+## What is the difference between a container & a workspace?
+
 In OpenFin, a container and a workspace serve different purposes:
 
 1. **Container:**
