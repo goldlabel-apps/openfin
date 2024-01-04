@@ -1,12 +1,6 @@
 ## OpenFin
 
-This repo exists to provide a quick way to evaluate the [OpenFin](https://www.openfin.co/) financial application platform. It is currently used by top tier financial institutions as the framework on top of which specific applications are built
-
-> [GitHub starter](https://github.com/built-on-openfin/frontend-framework-starter)
-
-OpenFin provides a solid application framework for desktop OS's. The frontend is Framework agnostic, which means we can use modern React patterns, including Redux, Material UI and much more
-
-## Usage (container)
+#### Usage (container)
 
 ```bash
 cd <working-dir>
@@ -20,8 +14,16 @@ npm run start:container
 npm run client:container
 ```
 
+#### Overview
 
-## Difference between containers & workspaces
+This repo exists to provide a quick way to evaluate the [OpenFin](https://www.openfin.co/) financial application platform. It is currently used by top tier financial institutions as the framework on top of which specific applications are built
+
+> [GitHub starter](https://github.com/built-on-openfin/frontend-framework-starter)
+
+OpenFin provides a solid application framework for desktop OS's. The frontend is Framework agnostic, which means we can use modern React patterns, including Redux, Material UI and much more
+
+
+## Containers vs Workspaces
 
 A container is an individual window or instance of an application running within OpenFin, while a workspace refers to a collection of containers arranged in a specific layout, providing a convenient way to manage and switch between different window configurations
 
