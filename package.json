@@ -1,6 +1,6 @@
 {
-  "name": "openfin",
-  "version": "1.0.3",
+  "name": "openfin-react",
+  "version": "2.0.0",
   "scripts": {
     "start:container": "cd ./container && npm start",
     "client:container": "cd ./container && npm run client",
