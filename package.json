@@ -1,7 +1,9 @@
 {
   "name": "openfin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
+    "start:container": "cd ./container && npm start",
+    "client:container": "cd ./container && npm run client",
     "test": "echo \"LGTM\" && exit 0"
   },
   "repository": {
