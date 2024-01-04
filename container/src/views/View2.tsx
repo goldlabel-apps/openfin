@@ -38,19 +38,19 @@ function View2() {
 		<div className="col fill gap20">
 			<header className="row spread middle">
 				<div className="col">
-					<h1>OpenFin React View 2</h1>
-					<h1 className="tag">React app view in an OpenFin container</h1>
+					<h1>Right Column</h1>
+					<h1 className="tag">
+						Outputs
+					</h1>
 				</div>
-				<div className="row middle gap10">
-					<img src={logo} alt="OpenFin" height="40px" />
-				</div>
+				
 			</header>
 			<main className="col gap10 left width-full">
 				<fieldset className="width-full">
 					<label htmlFor="message">Context Received</label>
 					<pre id="message" className="width-full" style={{minHeight:"110px"}}>{message}</pre>
 				</fieldset>
-				<button onClick={() => setMessage("")}>Clear</button>
+				<button onClick={() => setMessage("")}>Reset</button>
 			</main>
 		</div>
 	);

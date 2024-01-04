@@ -16,7 +16,7 @@ function Provider() {
 					await Notifications.register({
 						notificationsPlatformOptions: {
 							id: fin.me.identity.uuid,
-							title: "React Container Starter",
+							title: "OpenFin Example",
 							icon: "http://localhost:3000/favicon.ico"
 						}
 					});
