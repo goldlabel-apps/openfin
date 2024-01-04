@@ -1,0 +1,20 @@
+name: Listingslab 👉
+
+on: [pull_request]
+
+jobs:
+  run-ci:
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    name: 👌 OpenFin
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🦹‍♀️ 超级反派女人
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: 👼 天使
+        run: npm test
